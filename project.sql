@@ -46,7 +46,7 @@ SELECT
 from kierownicy
 
 
--- 6. COunt_of_SKills
+-- 6. Count_of_SKills
 
 select 
 skillname, 
