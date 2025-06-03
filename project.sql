@@ -24,14 +24,7 @@ from managers m
 	skille s  on k.PersonID = s.PersonID;
 	
 	
-create table Kierownikinfo as 
-Select
-k.lastName, k.FirstName, k.City, d.departmentName, s.skillname
-from kierownicy k 
-  inner join 
-	Departmenty d  on k.PersonID = d.PersonID
-	inner join 
-	skille s  on k.PersonID = s.PersonID
+
 	
 	
 select 
