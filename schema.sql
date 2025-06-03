@@ -21,3 +21,12 @@ SkillsID INT PRIMARY KEY AUTO_INCREMENT
 ,SKillName VARCHAR(100)
 ,PersonID INT
 );
+
+CREATE TABLE Managerinfo as 
+Select
+k.lastName, k.FirstName, k.City, d.departmentName, s.skillname
+from kierownicy k 
+  inner join 
+	Departmenty d  on k.PersonID = d.PersonID
+	inner join 
+	skille s  on k.PersonID = s.PersonID
