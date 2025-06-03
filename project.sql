@@ -46,5 +46,12 @@ SELECT
 from kierownicy
 
 
+-- 6. COunt_of_SKills
+
+select 
+skillname, 
+count(*) as number_of_skills_by_deprartment
+from ManagerInfo
+group by skillname;
 
 
